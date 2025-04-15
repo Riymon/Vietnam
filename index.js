@@ -1,4 +1,4 @@
 
 function readMoreBttn(){
-    window.location.href = "about.index";
+    window.location.href = "about.html";
 }
