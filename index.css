@@ -20,7 +20,6 @@ body{
     justify-content: right;
     align-items: center;
     margin-top: 5vh;
-    border: solid #FFCD00 2px;
 }
 .image-container{
     display: flex;
@@ -85,18 +84,20 @@ body{
     height: 25vh;
     border-radius: 5vh 5vh 0vh 0vh;
     display: grid;
-    grid-template-columns: 0fr 2fr 0fr; /* Three equal columns */
-    grid-template-rows: auto;         /* Rows adjust to content */
+    grid-template-columns: 0fr 2fr 0fr;
+    grid-template-rows: auto;     
 }
 .shape-center {
     display:inline-flex;
     align-items: center;
     width: 100vh;
     height: 10vh;
+    color: #FFCD00;
     border-radius: 0vh 0vh 10vh 10vh;
     background-color: #020202;
     margin-left: 40vh;
     margin-top: 0.9px;
+    box-shadow: 0vh 0.5vh 0vh 0vh;
 }
 .shape-left {
     display: inline-flex;
@@ -109,9 +110,13 @@ body{
 }
 .vietnam-man{
     margin-left: 40vh;
-    margin-top: 11vh;
+    margin-top: 13vh;
     width: 20vh;
     height: 25h;
+    color: #FFCD00;
+    /* background-color:#020202; */
+    border-radius: 5vh 0vh 5vh 5vh;
+    box-shadow: 0vh 0.5vh 0vh 0vh;
 }
 .shape-right {
     display: inline-flex;
