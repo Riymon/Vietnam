@@ -1,0 +1,21 @@
+*{
+    margin: 0vh;
+}
+.header-text{
+    background-color:#C8102E;
+    margin: 0vh;
+    color: #FFCD00;
+    text-align: center;
+    border-radius: 0vh 0vh 3vh 3vh;
+    border-bottom: solid #FFCD00 0.5vh;
+    box-shadow: 0vh 0.5vh 1vh;
+}
+body{
+    background-color: #020202;
+}
+.background-cover-div {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 1vh;
+}
