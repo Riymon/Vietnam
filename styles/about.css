@@ -1,5 +1,6 @@
 *{
     margin: 0vh;
+    color: white;
 }
 .header-text{
     background-color:#C8102E;
@@ -18,4 +19,106 @@ body{
     /* justify-content: space-between; */
     align-items: center;
     margin-top: 1vh;
+}
+.img-bcg{
+    border-radius: 2vh 0vh 2vh 0vh;
+}
+.right-div{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: #ffffff;
+    background-color: #C8102E;
+    padding: 5px 50px;
+    font-size: 15px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-right: solid #FFCD00 4px;
+    border-bottom: solid #FFCD00 2px;
+    box-shadow: 0px 0px 0px 0px;
+    width: 50vh;
+    height: 60vh;
+    margin-left: 0.5vh;
+}
+.shape-center {
+    display:inline-flex;
+    align-items: center;
+    width: 100vh;
+    height: 10vh;
+    color: #FFCD00;
+    border-radius: 0vh 0vh 10vh 10vh;
+    background-color: #020202;
+    margin-left: 40vh;
+    margin-top: 0.9px;
+    box-shadow: 0vh 0.5vh 0vh 0vh;
+}
+.shape-left {
+    display: inline-flex;
+    width: 12vh;
+    height: 10vh;
+    border-radius: 3vh 7vh 0vh 7vh;
+    background-color: #020202;
+    margin-left: 0.1vh;
+    color:#FFCD00;
+    box-shadow: 1vh 0.5vh 0vh 0.5vh;
+    /* margin-bottom: 50vh; */
+}
+.vietnam-man{
+    margin-left: 40vh;
+    margin-top: 13vh;
+    width: 20vh;
+    height: 25h;
+    color: #FFCD00;
+    /* background-color:#020202; */
+    border-radius: 5vh 0vh 5vh 5vh;
+    box-shadow: 0vh 0.5vh 0vh 0vh;
+}
+.shape-right {
+    display: inline-flex;
+    width: 12vh;
+    height: 10vh;
+    border-radius: 7vh 3vh 7vh 0vh;
+    background-color: #020202;
+    margin-right: 0.1vh;
+    color: #FFCD00;
+    box-shadow: 0.2vh 0.5vh 0vh 0.5vh;
+}
+.footer-div {
+    margin-top: 2vh;
+    background-color: #C8102E;
+    width: auto;
+    height: 25vh;
+    border-radius: 5vh 5vh 0vh 0vh;
+    display: grid;
+    grid-template-columns: 0fr 2fr 0fr;
+    grid-template-rows: auto;     
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 70vh;
+    color: white;
+    background-color:#000000;
+}
+.left-content {
+    margin-left: 4vh;
+    width: 90vh;
+    height: 50vh;
+    background-color: #C8102E;
+    border-radius: 7vh 0vh 7vh 0vh;
+    padding: 2.5vh 10vh;
+}
+.right-content {
+    width: 90vh;
+    margin-left: 10vh;
+    margin-right: 4vh;
+    height: 50vh;
+    background-color: #C8102E;
+    border-radius: 7vh 0vh 7vh 0vh;
+    padding: 2.5vh 10vh;
+}
+body h1{
+    text-align: center;
 }
