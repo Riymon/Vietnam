@@ -88,6 +88,7 @@ body{
     color:#FFCD00;
     box-shadow: 1vh 0.5vh 0vh 0.5vh;
     /* margin-bottom: 50vh; */
+    animation: swingBottomToTop 2s ease-in-out;
 }
 .vietnam-man{
     margin-left: 40vh;
@@ -109,6 +110,7 @@ body{
     margin-right: 0.1vh;
     color: #FFCD00;
     box-shadow: 0.2vh 0.5vh 0vh 0.5vh;
+    animation: swingBottomToTop 2s ease-in-out;
 }
 .read-more-bttn{
     background-color: #ffffff;
@@ -120,7 +122,6 @@ body{
     font-family:'Times New Roman', Times, serif;
     padding: .5vh;
     font-size: 2vh;
-
 }
 .read-more-bttn :hover{
     color: black;
@@ -162,11 +163,21 @@ body{
 
   @keyframes smallToStatic {
     from {
-      transform: scale(0); /* Starts larger */
-      opacity: 0.5; /* Semi-transparent */
+      transform: scale(0); 
+      opacity: 0.5; 
     }
     to {
-      transform: scale(1); /* Ends at normal size */
-      opacity: 1; /* Fully visible */
+      transform: scale(1); 
+      opacity: 1; 
+    }
+  }
+  @keyframes swingBottomToTop {
+    50% {
+      transform: translateY(50%) rotate(-20deg); 
+      opacity: 0.8; 
+    }
+    100% {
+      transform: translateY(0) rotate(0deg); 
+      opacity: 1;
     }
   }
