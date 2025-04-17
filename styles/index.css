@@ -25,6 +25,9 @@ body{
     margin-top: 5vh;
     animation: slideRightToLeft 1s ease-in-out;
 }
+.image-container:hover{
+  transform: translateY(-10px);
+}
 .image-container{
     display: flex;
     justify-content: right;
@@ -45,6 +48,7 @@ body{
     width: 120vh;
     height: 60vh;
     margin-right: 25vh;
+    transition: transform 0.4 ease;
 }
 .right-div{
     display: flex;
@@ -62,6 +66,10 @@ body{
     width: 50vh;
     height: 60vh;
     margin-left: 0.5vh;
+    transition: transform 0.2s ease;
+}
+.shape-right:hover{
+  transform: translateY(-10px);
 }
 .shape-center {
     display:inline-flex;
@@ -86,6 +94,10 @@ body{
     box-shadow: 1vh 0.5vh 0vh 0.5vh;
     /* margin-bottom: 50vh; */
     animation: swingBottomToTop 2s ease-in-out;
+    transition: transform 0.2s ease;
+}
+.shape-left:hover{
+  transform: translateY(-10px);
 }
 .vietnam-man{
     margin-left: 40vh;
@@ -97,6 +109,10 @@ body{
     border-radius: 5vh 0vh 5vh 5vh;
     box-shadow: 0vh 0.5vh 0vh 0vh;
     animation: smallToStatic 2s ease-in-out;
+    transition: transform 0.2s ease;
+}
+.vietnam-man:hover{
+  transform: translateY(-10px);
 }
 .shape-right {
     display: inline-flex;
