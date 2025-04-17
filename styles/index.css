@@ -46,9 +46,6 @@ body{
     height: 60vh;
     margin-right: 25vh;
 }
-.image-container label{
-    font-weight: bold;
-}
 .right-div{
     display: flex;
     justify-content: right;
@@ -128,9 +125,6 @@ body{
 }
 .right-sub-div {
     font-size: 15px;
-}
-.img-bcg{
-    border-radius: 2vh 0vh 2vh 0vh;
 }
 .footer-div {
     margin-top: 2vh;
