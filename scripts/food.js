@@ -1,4 +1,4 @@
-updateVietnamTime();
+setInterval(updateVietnamTime, 1000);
 
 function updateVietnamTime() {
     const vietnamDateTime = new Date().toLocaleString('vi-VN', {

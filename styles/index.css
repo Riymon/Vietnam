@@ -135,6 +135,7 @@ body{
     font-family:'Times New Roman', Times, serif;
     padding: .5vh;
     font-size: 2vh;
+    text-decoration: none;
 }
 .read-more-bttn :hover{
     color: black;
