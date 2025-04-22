@@ -157,7 +157,71 @@
     .building-img:hover {
         transform: translateY(-10px);
     }
+ .shape-right {
+        display: inline-flex;
+        width: 12vh;
+        height: 10vh;
+        border-radius: 7vh 3vh 7vh 0vh;
+        background-color: #121212;
+        margin-right: 0.1vh;
+        color: #C8102E;
+        box-shadow: 0.2vh 0.5vh 0vh 0.5vh;
+        transition: transform 0.2s ease;
+    }
+    .shape-right:hover {
+        transform: translateY(-10px);
+    }
+    .footer-div {
+        margin-top: 2vh;
+        background-color: #2a2a2a;
+        width: auto;
+        height: 23vh;
+        border-radius: 5vh 5vh 0vh 0vh;
+        display: grid;
+        grid-template-columns: 0fr 2fr 0fr;
+        grid-template-rows: auto;     
+    }
 
+    /* Keep all your original animations */
+    @keyframes slideLeftToRight {
+        from { transform: translateX(-100%); }
+        to { transform: translateX(0); }
+    }
+    @keyframes slideRightToLeft {
+        from { transform: translateX(100%); }
+        to { transform: translateX(0); }
+    }
+    @keyframes bottomToCenterGrow {
+        from { transform: translateY(100%) scale(15); opacity: 0; }
+        to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+    `;
+    
+    let isDarkMode = false;
+
+    // Toggle between themes
+    themeToggle.addEventListener('click', () => {
+        isDarkMode = !isDarkMode;
+        
+        if (isDarkMode) {
+            styleElement.textContent = darkTheme;
+            themeToggle.textContent = '☀️ Light Mode';
+            document.body.classList.add('dark-mode');
+        } else {
+            styleElement.textContent = originalTheme;
+            themeToggle.textContent = '🌙 Dark Mode';
+            document.body.classList.remove('dark-mode');
+        }
+        
+        // Save preference to localStorage
+        localStorage.setItem('darkMode', isDarkMode);
+    });
+
+    // Check for saved preference
+    if (localStorage.getItem('darkMode') === 'true') {
+        themeToggle.click(); 
+    }
+});
     
     let user_input;
 
