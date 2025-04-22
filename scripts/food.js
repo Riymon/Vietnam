@@ -1,3 +1,4 @@
+
 setInterval(updateVietnamTime, 1000);
 
 function updateVietnamTime() {
@@ -14,3 +15,12 @@ function updateVietnamTime() {
     const timeElement = document.getElementById("date-time");
     timeElement.innerHTML = `Vietnam Time: ${vietnamDateTime}`;
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const styleElement = document.createElement('style');
+    document.head.appendChild(styleElement);
+    
+    const originalTheme = ``;
+
+const darkTheme = `
