@@ -158,4 +158,28 @@ document.addEventListener('DOMContentLoaded', function() {
       grid-template-rows: auto;     
     }
     `;
+    let isDarkMode = false;
 
+    // Toggle between themes
+    themeToggle.addEventListener('click', () => {
+        isDarkMode = !isDarkMode;
+        
+        if (isDarkMode) {
+            styleElement.textContent = darkTheme;
+            themeToggle.textContent = '☀️ Light Mode';
+            document.body.classList.add('dark-mode');
+        } else {
+            styleElement.textContent = originalTheme;
+            themeToggle.textContent = '🌙 Dark Mode';
+            document.body.classList.remove('dark-mode');
+        }
+        
+        // Save preference to localStorage
+        localStorage.setItem('darkMode', isDarkMode);
+    });
+
+    // Check for saved preference
+    if (localStorage.getItem('darkMode') === 'true') {
+        themeToggle.click(); 
+    }
+});
