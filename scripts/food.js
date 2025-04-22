@@ -33,12 +33,15 @@ const darkTheme = `{
     justify-content: baseline;
     background-color: #1a1a1a;
     margin: 0vh;
-    color: #FFCD00;
+    color: #C8102E; 
     text-align: center;
     border-radius: 0vh 0vh 3vh 3vh;
     border-bottom: solid #a0a0a0 0.5vh;
     box-shadow: 0vh 0.5vh 1vh;
     animation: slideLeftToRight 1.5s ease-in-out;
+}
+.header-text h1{
+    color: #FFCD00;
 }
 .header-text ul {
     list-style-type: none;
@@ -66,7 +69,6 @@ const darkTheme = `{
 }
 #date-time {
     margin-left: 20vh;
-    color: #a0a0a0;
 }
 #date-time:hover{
     color: #FFCD00;
