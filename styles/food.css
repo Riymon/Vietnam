@@ -29,7 +29,7 @@
     border-right: solid #FFCD00 1vh;
     border-bottom: solid #FFCD00 0.5vh;
     font-family:'Times New Roman', Times, serif;
-    padding: .5vh 7vh .5vh 7vh;
+    padding: .5vh 6vh .5vh 6vh;
     font-size: 2vh;
     text-decoration: none;
 }
@@ -40,6 +40,35 @@
 #date-time{
     margin-left: 20vh;
 }
+
+.theme-btn {
+  position: absolute;
+  top: .5vh;
+  right: 5vh;
+  transform: translateY(-50%);
+  background-color: black;
+  border-radius: 20px;
+  border: none;
+  padding: 3px 6px;
+  margin-top: 1.9vh;
+  color: #FFCD00;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dark .theme-btn {
+  color: #C8102E;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dark .theme-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 body{
     background-color: #020202;
 }
