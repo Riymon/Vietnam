@@ -3,7 +3,6 @@
         const styleElement = document.createElement('style');
         document.head.appendChild(styleElement);
         
-        // Original theme CSS (empty as it's in your index.css)
         const originalTheme = ``;
 
     const darkTheme = `
@@ -28,7 +27,7 @@
         display: inline-block;
         align-items: space-between;
         background-color: #121212;
-        margin-left: 80vh;
+        margin-left: 51vh;
         border-bottom-right-radius: 3vh;
         border-top-left-radius: 3vh;
         color: #a0a0a0;

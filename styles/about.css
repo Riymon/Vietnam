@@ -19,7 +19,7 @@
     display: inline-block;
     align-items: space-between;
     background-color: #181818;
-    margin-left: 80vh;
+    margin-left: 51vh;
     border-bottom-right-radius: 3vh;
     border-top-left-radius: 3vh;
     color:#C8102E;
@@ -32,6 +32,33 @@
 .header-text h2:hover{
     background-color:#FFCD00;
     border-color: black;
+}
+.theme-btn {
+  position: absolute;
+  top: .5vh;
+  right: 5vh;
+  transform: translateY(-50%);
+  background-color: black;
+  border-radius: 20px;
+  border: none;
+  padding: 3px 5px;
+  margin-top: 1.9vh;
+  color: #FFCD00;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dark .theme-btn {
+  color: #C8102E;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dark .theme-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 body{
     background-color: #020202;
@@ -55,6 +82,7 @@ body{
     /* color: white; */
     background-color:#000000;
     animation: slideRightToLeft 1s ease-in-out;
+    font-size: 2.4vh;
 }
 .left-content {
     margin-left: 4vh;
