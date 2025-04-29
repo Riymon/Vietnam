@@ -101,7 +101,7 @@ const darkTheme = `{
   background-color: rgba(0, 0, 0, 0.3);
 }
 body {
-    background-color: #121212;
+    background-color: #1a1a1a;
 }
 .background-cover-div {
     display: flex;
