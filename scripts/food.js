@@ -111,10 +111,11 @@ body {
 }
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
     grid-template-rows: auto;
     width: auto;
-    height: 70vh;
+    height: 71vh;
+    padding: 2vh 10ch
     margin-top: 2vh;
     background-color: #1a1a1a;
     animation: slideRightToLeft 1s ease-in-out;
@@ -123,14 +124,14 @@ body {
     transform: translateY(-10px);
 }
 .child-content {
-    margin-left: 4vh;
-    width: 29vh;
-    height: 70vh;
+    margin-left: 3vh;
+    width: 33vh;
+    height: 65vh;
     color: #a0a0a0;
     background-color: #2a2a2a;
     border-radius: 7vh 0vh 7vh 0vh;
     border: solid #a0a0a0 0.5vh;
-    padding: 2.5vh 8vh;
+    padding: 2vh 4vh;
     box-shadow: 0px 0px 10px 0px;
     transition: transform 0.2s ease;
     font-size: 3vh;
